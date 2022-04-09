@@ -1,18 +1,56 @@
-# Key_Logger
-An encryption method to catch the activity of user by taking the screenshot of pc, its key logging and details of its machine and ip then encrypt it...
 
-## Requirements for Setup
-Install libraries using pip install commands that include::
-1.smtlib
-2.socket
-3.platform
-4.win32
-5.pynput
-6.scipy
-7.sounddevice
-8.cryptography
+# PyKeylogger
 
-## Steps to perform 
-Step1 :: First Generate the encryption key using generateKey.py file  
-Step2 :: Put that in keylogger.py and also enter email address of to and from  
-Step3 :: Then check that new files are being created.
+![pyKeylogger](https://user-images.githubusercontent.com/77505989/162591491-fc2e14ea-3f2e-4d15-a86e-f0e7394a888d.png)
+
+Key loggers are activity-monitoring software programs that give hackers access to your data. The software is installed on your computer and records everything you type. Then it sends this log file to a server, where cybercriminals wait to use all this sensitive information.
+
+### This key logger can not only detect & record your keystrokes but can also:
+
+- Takes screenshot at a particular interval of time
+
+- Records audio
+
+- Record your System’s information & IP Address
+
+- Sends the data to the remote server using [Twilio](https://www.twilio.com/)
+
+- Keep track of your clipboard information
+
+## Technologies on which it is built:
+```
+1. Python
+2. Socket
+3. Platform
+4. Win32
+5. Pynput
+6. Scipy
+7. Sound-Device
+8. Cryptography
+9. Twilio
+```
+## Why pyKeylogger?
+
+- It will broaden the way of thinking of researchers about how we can innovate the key loggers.
+- It will help identify the loopholes in the current anti key loggers software.
+- Multi software hack: pyKeylogger is packed with many modules to make it more advance than traditional keyloggers.
+
+#### Capable of deleting all the records after sending them to the remote server.
+![Delete Records](https://user-images.githubusercontent.com/77505989/162591486-e96ab751-bcd1-47b4-b48d-1dc304e06426.png)
+
+#### Encrypts the data & generates a new key (Asymmetric Key Encryption) that only the person at the remote server can decrypt.
+![Encryption](https://user-images.githubusercontent.com/77505989/162591487-77b5abd9-ab17-4613-a1f2-6618a70b4c84.png)
+
+#### Using Twilio for transferring the data to a remote server!
+![Twilio](https://user-images.githubusercontent.com/77505989/162591488-6682da11-167a-4848-81de-e09d86561830.png)
+
+## How to use?
+After cloning & installing all the dependencies, run
+```
+>>> python GenerateKey.py
+```
+It will generate the encryption key. Paste this key into `DecryptFile.py` & `Keylogger.py`. Then run,
+```
+>>> python Keylogger.py
+```
+You will see that new files are generating on their own.
