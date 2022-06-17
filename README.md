@@ -34,13 +34,19 @@ Key loggers are activity-monitoring software programs that give hackers access t
 - Multi software hack: pyKeylogger is packed with many modules to make it more advance than traditional keyloggers.
 
 #### Capable of deleting all the records after sending them to the remote server.
-![Delete Records](https://user-images.githubusercontent.com/77505989/162591486-e96ab751-bcd1-47b4-b48d-1dc304e06426.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/77505989/162591486-e96ab751-bcd1-47b4-b48d-1dc304e06426.png" alt="Delete Records" />
+</p>
 
 #### Encrypts the data & generates a new key (Asymmetric Key Encryption) that only the person at the remote server can decrypt.
-![Encryption](https://user-images.githubusercontent.com/77505989/162591487-77b5abd9-ab17-4613-a1f2-6618a70b4c84.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/77505989/162591487-77b5abd9-ab17-4613-a1f2-6618a70b4c84.png" alt="Encryption" />
+</p>
 
 #### Using Twilio for transferring the data to a remote server!
-![Twilio](https://user-images.githubusercontent.com/77505989/162591488-6682da11-167a-4848-81de-e09d86561830.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/77505989/162591488-6682da11-167a-4848-81de-e09d86561830.png" alt="Twilio" />
+</p>
 
 ## How to use?
 After cloning & installing all the dependencies, run
